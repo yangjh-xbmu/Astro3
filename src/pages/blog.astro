@@ -10,35 +10,11 @@ import Card from "../components/Card.astro";
       <a href="/about/">关于</a>
       <a href="/blog/">博客</a>
     </nav>
-    <h1>欢迎来到 <span class="text-gradient">Astro</span></h1>
-    <h2>Welcome to Astro!</h2>
-    <p class="instructions">
-      To get started, open the directory <code>src/pages</code> in your project.<br
-      />
-      <strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message
-      above.
-    </p>
-    <ul role="list" class="link-card-grid">
-      <Card
-        href="https://docs.astro.build/"
-        title="Documentation"
-        body="Learn how Astro works and explore the official API docs."
-      />
-      <Card
-        href="https://astro.build/integrations/"
-        title="Integrations"
-        body="Supercharge your project with new frameworks and libraries."
-      />
-      <Card
-        href="https://astro.build/themes/"
-        title="Themes"
-        body="Explore a galaxy of community-built starter themes."
-      />
-      <Card
-        href="https://astro.build/chat/"
-        title="Community"
-        body="Come say hi to our amazing Discord community. ❤️"
-      />
+    <h1>欢迎来到 <span class="text-gradient">Blog页面</span></h1>
+    <p>在这里，我将分享我的学习 Astro 之旅。</p>
+    <hr />
+    <ul>
+      <li><a href="/posts/1/">我的第一篇博客文章</a></li>
     </ul>
   </main>
 </Layout>
@@ -54,6 +30,9 @@ import Card from "../components/Card.astro";
     line-height: 1.6;
   }
   nav a {
+    color: white;
+  }
+  ul li a {
     color: white;
   }
   .astro-a {
